@@ -327,7 +327,7 @@ footer nav ul.redes li {
     }
 
     header, main, footer {
-        width: 100%
+        width: 100%;
         padding:20px;
     }
 }
