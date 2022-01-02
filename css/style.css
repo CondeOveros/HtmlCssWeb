@@ -337,7 +337,14 @@ footer nav ul.redes li {
     /*
     CSS cabacera
     */
+    header {
+        margin: 0 auto;
+    }
 
+    header, main, footer {
+        width: 100%;
+        padding:20px;
+    }
     .contlogo {
         margin: 0 auto;
         width: 100%;
