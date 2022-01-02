@@ -324,11 +324,37 @@ footer nav ul.redes li {
      */
     header {
         margin: 0 auto;
+        width: 100%;
     }
 
+    header, main, footer, .superior {
+        width: 100%;
+        padding:20px;
+    }
     header, main, footer {
         width: 100%;
         padding:20px;
+    }
+    .superior ul {
+        display: inline-block;
+        width: 100%;
+        font-size: 1em;
+    }
+    .contlogo {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .noplanb {
+        width:100%;
+    }
+
+    .c15 {
+width:100%;
+    }
+    footer nav, footer div {
+        margin: 0 auto;
+        width: 100%;
+
     }
 }
 
@@ -417,7 +443,8 @@ CSS COP26
 
     footer nav, footer div {
         margin: 0 auto;
-        width: 75%;
+        width: 100%;
+
     }
 
     footer div {
