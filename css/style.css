@@ -176,10 +176,18 @@ article a {
 article a:hover {
     color: rgb(0, 0, 0);
 }
+section figure {
 
-section figure img {
     width: 335px;
     height: 100%;
+overflow: hidden;
+    float: left;
+}
+section figure img {
+    display: compact;
+    width: 335px;
+
+    object-fit: contain;
     float: left;
 }
 /*
