@@ -74,6 +74,7 @@ header {
     display: block;
     line-height: 3.0em;
     padding-bottom: 10px;
+    z-index: 1000;
 }
 
 .superior ul {
@@ -176,19 +177,40 @@ article a {
 article a:hover {
     color: rgb(0, 0, 0);
 }
-section figure {
+figure{
+    width:335px;
 
-    width: 335px;
-    height: 100%;
-overflow: hidden;
-    float: left;
+    overflow: hidden;
 }
-section figure img {
-    display: compact;
-    width: 335px;
 
-    object-fit: contain;
-    float: left;
+.fig1 img{
+    position: relative;
+    max-height:240px;
+    left:-10px;
+    width:355px;
+}
+.fig2 img{
+    position: relative;
+    max-height:260px;
+    left:-50px;
+    width:400px;
+}
+.fig3 img{
+    position: relative;
+    max-height:260px;
+    width:350px;
+}
+.fig4 img{
+    position: relative;
+    max-height:225px;
+    width:385px;
+}
+
+.fig5 img{
+    position: relative;
+    max-height:285px;
+    left:-50px;
+    width:430px;
 }
 /*
 CSS COP26
@@ -204,7 +226,8 @@ CSS COP26
 }
 
 h1 {
-    margin-top: 65px;
+    margin-top: 49px;
+    margin-bottom: 18px;
 }
 
 aside h3 {
@@ -456,6 +479,39 @@ width:100%;
     }
     h2 {
         font-size: 1.3rem;
+    }
+    /*
+CSS Síntomas
+ */
+
+    .sintomas{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section {
+        padding: 20px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+        grid-column: 1;
+        margin-bottom: 50px;
+    }
+
+    section.left{
+        grid-column: 1;
+    }
+
+
+    .sintomas div{
+        grid-column: 3 / 4;
+    }
+    .sintomas article h2{
+        margin-bottom: 5px;
+    }
+    .sintomas article p{
+        font-size: 1em;
+        line-height: 1.5em;
     }
     /*
 CSS COP26
