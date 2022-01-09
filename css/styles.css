@@ -280,6 +280,27 @@ Se añade la separación que tiene que haber entre la página y el borde de la p
 main{
     padding:20px;
 }
+/* index
+
+ */
+.principal h1{
+    background-image: url("../images/bg-hero-home.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    color: white;
+    padding: 75px 0 75px 20px;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+
+
+
+
+
+
 /* Síntomas
 Se pone el ancho de la sección, la separación entre el borde y el contenido, las esquinas redondeadas el color del fondo y la separación con el elemento inmediatamente inferior
 */
@@ -290,11 +311,23 @@ section.sintomas {
     border-radius: 10px;
     margin-bottom: 15px;
 }
+.videos h1 {
+    margin: 30px 0 10px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sintomas figure img {
+    max-width:100%;
+}
 /*
 Se determina el ancho máximo de la imagen
  */
-section figure img {
-    max-width:100%;
+.videos h1 {
+    margin: 30px 0 10px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 figure.video{
