@@ -7,6 +7,7 @@ Tenemos como criterio de diseño "mobile first"
 Se importan las fuentes a utilizar
  */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
 /*
 Se anulan los márgenes y los padding de todos los elementos
 Se utiliza el modelo alternativo de cajas
@@ -33,6 +34,7 @@ body {
 h1, h2, h3 {
     line-height: 1.1em;
 }
+
 /*
 Estilos generales para la cabecera h1
  */
@@ -42,6 +44,7 @@ h1 {
     font-size: 1.5rem;
     text-align: center;
 }
+
 /*
 Estilos generales para la cabecera h2
  */
@@ -49,6 +52,7 @@ h2 {
     font-weight: 600;
     font-size: 1.2rem;
 }
+
 /*
 Estilos generales para la cabecera h3
  */
@@ -57,6 +61,7 @@ h3 {
     font-weight: 600;
     font-size: .8rem;
 }
+
 /*
 Estilos generales para la párrafo
  */
@@ -64,31 +69,36 @@ p {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
 /*
 Estilos generales básicos para enlaces
  */
 a {
     text-decoration: none;
-    color:rgb(0,0,0);
+    color: rgb(0, 0, 0);
 }
-.enlace{
-    color: rgb(189,55,0);
+
+.enlace {
+    color: rgb(189, 55, 0);
 }
+
 /*
 Resaltado de texto
  */
 .resaltado {
     font-weight: 800;
 }
+
 /*
 enlaces de "leer más", "más info" según se determina en el enunciado
  */
-.leermas{
-    color: rgb(189,55,0);
-    font-weight:600;
+.leermas {
+    color: rgb(189, 55, 0);
+    font-weight: 600;
     padding-bottom: 5px;
     border-bottom: dotted 1px;
 }
+
 /*
 CSS cabacera
  */
@@ -100,6 +110,7 @@ header {
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
+
 /*
 Márgenes para el logo (este es un texto)
  */
@@ -107,6 +118,7 @@ Márgenes para el logo (este es un texto)
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 /*
 CSS para el lema
  */
@@ -118,6 +130,7 @@ CSS para el lema
     font-size: .8em;
     text-align: center;
 }
+
 /*
 CSS para el logo
  */
@@ -128,6 +141,7 @@ CSS para el logo
     text-align: center;
     font-size: 3.5em;
 }
+
 /* Para el menuú de navehación se usa
 
  */
@@ -135,7 +149,7 @@ nav {
     background-color: white;
     position: -webkit-sticky;
     position: sticky;
-    top:0;
+    top: 0;
     padding-bottom: 20px;
     z-index: 1000;
 }
@@ -166,14 +180,13 @@ nav ul li a.actual {
 }
 
 
-
 /*
  CSS Pie de página
   */
 footer {
     width: 100%;
     display: block;
-    padding:5px 20px 20px 20px;
+    padding: 5px 20px 20px 20px;
 
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -188,7 +201,7 @@ footer nav {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
-line-height: 1.2em;
+    line-height: 1.2em;
     background-color: rgb(0, 0, 0);
 }
 
@@ -206,7 +219,7 @@ footer div p {
     font-size: 1em;
     line-height: 1.4em;
 }
-footer nav{}
+
 footer nav ul {
     margin: 0;
     padding-top: 55px;
@@ -230,7 +243,6 @@ footer ul li a:hover {
 }
 
 
-
 footer nav ul.redes {
     padding: 40px 0 20px;
     list-style: none;
@@ -240,6 +252,7 @@ footer nav ul.redes li {
     display: inline;
     margin: 0;
 }
+
 /*
 Se configura la apariencia de los enlaces a redes sociales del menú del footer.
 También su comportamiento en caso de poner el puntero encima del enlace
@@ -277,19 +290,21 @@ También su comportamiento en caso de poner el puntero encima del enlace
 /*
 Se añade la separación que tiene que haber entre la página y el borde de la pantalla del dispositivo móvil
  */
-main.sintomas{
-padding:020px;
+main.sintomas {
+    padding: 020px;
 }
+
 /* index
 
  */
-main.index{
-    background-color: rgb(244,244,244);
+main.index {
+    background-color: rgb(244, 244, 244);
 }
-h1.principal{
+
+h1.principal {
     margin-top: 0;
     display: inline-block;
-    width:100%;
+    width: 100%;
     background-image: url("../images/bg-hero-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -300,38 +315,45 @@ h1.principal{
     line-height: 1.5em;
     text-align: left;
 }
-.titular h2{
+
+.titular h2 {
     text-align: center;
     font-weight: 800;
     font-size: 1.5rem;
     padding: 30px 0 15px;
 }
 
-.titular p{
+.titular p {
 
     font-size: 1.3rem;
 }
+
 section.titular {
 
     margin: 0 20px;
     padding: 0 0 30px;
 }
+
 section.noticias {
     margin: 0 20px;
-padding: 0 0 30px;
+    padding: 0 0 30px;
 }
-.noticias img{
+
+.noticias img {
     max-width: 100%;
 }
-.noticias figcaption{
+
+.noticias figcaption {
     text-align: left;
 }
+
 h2.noticiasindex {
-    margin:75px 0 10px;
+    margin: 75px 0 10px;
     font-weight: 800;
     font-size: 1.5rem;
     text-align: center;
 }
+
 .noticias h3 {
     padding: 10px 0 10px;
     line-height: 1.2em;
@@ -340,52 +362,58 @@ h2.noticiasindex {
     text-transform: none;
 
 
-}.noticias h3 a {
-    color:rgb(189, 55, 0);
+}
+
+.noticias h3 a {
+    color: rgb(189, 55, 0);
 
 
 }
 
- .boletin{
-     background-color: rgb(242, 232, 228);
-     padding: 0 30px 50px;
- }
-.boletin h2{
+.boletin {
+    background-color: rgb(242, 232, 228);
+    padding: 0 30px 50px;
+}
+
+.boletin h2 {
     padding: 50px 0 10px 0;
     text-align: center;
     font-size: 1.5em;
     font-weight: 800;
 }
-.boletin p{
+
+.boletin p {
     font-size: .7em;
     line-height: 1.2em;
 }
-input[type=text], input[type=email]{
-    display:block;
-    width:100%;
+
+input[type=text], input[type=email] {
+    display: block;
+    width: 100%;
     font-size: 1.1em;
     height: 55px;
-    padding:10px;
+    padding: 10px;
     margin-bottom: 15px;
 }
-input[type=checkbox]{
-    display:inline-block;
+
+input[type=checkbox] {
+    display: inline-block;
     font-size: 1.1em;
-margin:20px 0
+    margin: 20px 0
 }
-button{
-    display:block;
+
+button {
+    display: block;
 
     font-size: 1.5em;
     height: 55px;
-    padding:10px;
+    padding: 10px;
     margin-bottom: 15px;
 
 
-
-    background-color: rgb(189,55,0);
-    border:none;
-    color:rgb(255,255,255);
+    background-color: rgb(189, 55, 0);
+    border: none;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding: 20px 30px;
 }
@@ -400,13 +428,15 @@ section.sintomas {
     border-radius: 10px;
     margin-bottom: 15px;
 }
-main.mainvideos{
+
+main.mainvideos {
     padding: 0 20px;
 }
 
 .sintomas figure img {
-    max-width:100%;
+    max-width: 100%;
 }
+
 /*
 Se determina el ancho máximo de la imagen
  */
@@ -418,14 +448,15 @@ Se determina el ancho máximo de la imagen
 
 }
 
-figure.video{
+figure.video {
     background-color: white;
     margin-bottom: 25px;
 }
-.video-fluid {
-    position:relative;
 
-padding: 0;
+.video-fluid {
+    position: relative;
+
+    padding: 0;
 
     max-width: 100%;
     padding: 0;
@@ -436,19 +467,26 @@ padding: 0;
 }
 
 .video-fluid-item {
-    position:absolute;top:0;left:0;width:100%; height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
 }
+
 .video-fluid::before {
     display: block;
     content: "";
     padding-top: 56.25%;
 }
-figcaption{
+
+figcaption {
     font-size: 1em;
     text-align: center;
     padding: 10px 0;
 }
+
 cite {
     font-weight: 800;
 }
@@ -456,22 +494,26 @@ cite {
 /*
 COP 26
  */
-main.maincop26{
-    padding:0 20px;
+main.maincop26 {
+    padding: 0 20px;
 }
-.maincop26 h2{
-    padding:20px 0 20px;
+
+.maincop26 h2 {
+    padding: 20px 0 20px;
 }
-h2.resultados{
+
+h2.resultados {
     padding: 30px 0 20px;
 }
 
-ol{
-  padding-left: 20px;
+ol {
+    padding-left: 20px;
 }
-ol li{
+
+ol li {
     margin-bottom: 20px;
 }
+
 blockquote {
     border-left: solid 5px rgb(189, 55, 0);
     background-color: rgb(255, 255, 255);
@@ -480,5 +522,125 @@ blockquote {
     font-style: italic;
 }
 
+@media only screen and (min-width: 800px) {
 
 
+    /*
+    Cabecera, lema, logo y Navegación superior
+     */
+    header nav {
+        width: 100%
+    }
+
+    /*
+    CSS para el lema
+     */
+    .noplanb {
+
+        padding: 5px 0 5px;
+        font-size: 1em;
+    }
+
+    /*
+    CSS para el logo
+     */
+    .c15 {
+        font-size: 4.5em;
+    }
+
+    /*
+    Navegación
+     */
+
+    nav ul {
+        padding: 0 20px;
+        width: 100%;
+
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+
+    footer nav, footer div {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer nav ul {
+        margin: 0 auto;
+    }
+
+    footer nav ul li {
+        display: inline;
+        margin-right: 7px;
+    }
+
+    .footmenu li:after {
+        margin-left: 5px;
+        content: ' \2022';
+    }
+
+    .footmenu li:last-child:after {
+        content: '';
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1110px) {
+
+    /*
+    Index
+     */
+    h1.principal {
+        margin-top: 0;
+        display: inline-block;
+        width: 100%;
+        background-image: url("../images/bg-hero-home.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding: 75px 0 75px 20px;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (min-width: 1110px) {
+
+
+    /*
+    Navegación
+     */
+    nav ul {
+        padding: 0 20px;
+        width: 1110px;
+
+    }
+
+    /*
+    Index
+     */
+    h1.principal {
+        margin-top: 0;
+        display: inline-block;
+        width: 100%;
+        background-image: url("../images/bg-hero-home.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding: 75px 0 75px 20px;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+}
