@@ -283,7 +283,8 @@ main{
 /* index
 
  */
-.principal h1{
+h1.principal{
+    margin-top: 0;
     background-image: url("../images/bg-hero-home.jpg");
     background-repeat: no-repeat;
     background-size: 600px;
@@ -294,9 +295,16 @@ main{
     line-height: 1.5em;
     text-align: left;
 }
+.titular h2{
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 20px 0 15px;
+}
 
+.titular p{
 
-
+    font-size: 1.2rem;
+}
 
 
 
