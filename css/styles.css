@@ -1,0 +1,249 @@
+/*
+CSS general
+ */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    background-color: rgb(244, 244, 244);
+}
+
+h1, h2, h3 {
+    line-height: 1.1em;
+}
+
+h1 {
+    margin: 50px 0 10px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.resaltado {
+    font-weight: 600;
+}
+
+.resaltadoitl {
+    font-weight: 600;
+    font-style: italic;
+}
+.leermas{
+    color: rgb(189,55,0);
+    font-weight:600;
+    padding-bottom: 5px;
+    border-bottom: dotted 1px;
+}
+/*
+CSS cabacera
+ */
+header {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.contlogo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.superior {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+.superior ul {
+    width: 100%;
+    margin: 0px auto 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.superior ul li {
+    text-align: center;
+}
+
+.superior ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.superior ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.superior ul li a.actual {
+    color: rgb(189, 55, 0);
+}
+
+.noplanb {
+    display: block;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin: 10px auto 0;
+    font-size: .8em;
+    text-align: center;
+}
+
+.c15 {
+    display: block;
+    line-height: 1em;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1em;
+    font-size: 3.5em;
+
+}
+
+/*
+ CSS Pie de página
+  */
+footer {
+    width: 100%;
+    display: block;
+    padding:5px 20px 20px 20px;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+footer nav {
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+line-height: 1.2em;
+}
+
+footer div {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+footer div p {
+    line-height: 1.4em;
+}
+
+footer nav ul {
+    margin: 0;
+    padding-top: 55px;
+    list-style: none;
+
+}
+
+footer nav ul li {
+    display: block;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer ul li a:hover {
+    color: rgb(189, 55, 0);
+}
+
+
+
+footer nav ul.redes {
+    padding: 40px 0 20px;
+    list-style: none;
+}
+
+footer nav ul.redes li {
+    display: inline;
+    margin: 0;
+}
+
+
+.twitter {
+    padding: 12.5px;
+    background-image: url("../images/twitter.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.youtube {
+    padding: 12.5px;
+    background-image: url("../images/youtube.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.instagram {
+    padding: 12.5px;
+    background-image: url("../images/instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.twitter:hover, .youtube:hover, .instagram:hover {
+    opacity: .7;
+}
+
+/* CSS Cuerpo */
+main{
+    padding:20px;
+}
+/* Síntomas */
+section {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+section figure img {
+    max-width:100%;
+}
+
+
+
+

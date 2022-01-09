@@ -150,7 +150,6 @@ section {
     border-radius: 10px;
     grid-column: 2 / 4;
     margin-bottom: 50px;
-
 }
 
 section.left{
@@ -489,6 +488,7 @@ CSS Síntomas
         grid-template-columns: 1fr;
     }
     section {
+        width:100%;
         padding: 20px;
         background-color: white;
         display: grid;
