@@ -288,9 +288,11 @@ main.index{
 }
 h1.principal{
     margin-top: 0;
+    display: inline-block;
+    width:100%;
     background-image: url("../images/bg-hero-home.jpg");
     background-repeat: no-repeat;
-    background-size: 600px;
+    background-size: cover;
     color: white;
     padding: 75px 0 75px 20px;
     font-weight: 400;
