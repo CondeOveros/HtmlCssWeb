@@ -330,33 +330,34 @@ h1.principal {
 
     font-size: 1.3rem;
 }
-/* 
+/* Corresponde a "¿Qué es un grado y medio?" */
 section.titular {
 
     margin: 0 20px;
     padding: 0 0 30px;
 }
-
+/* Sección de noticias de la página principal */
 section.noticias {
     margin: 0 20px;
     padding: 0 0 30px;
 }
-
+/* imágenes de las noticias */
 .noticias img {
     max-width: 100%;
 }
 
+/* Pie de foto de las imágenes en las noticias - fecha */
 .noticias figcaption {
     text-align: left;
 }
-
+/* Titulo de noticias */
 h2.noticiasindex {
     margin: 75px 0 10px;
     font-weight: 800;
     font-size: 1.5rem;
     text-align: center;
 }
-
+/* cabecera h3 - titulo de cada noticia */
 .noticias h3 {
     padding: 10px 0 10px;
     line-height: 1.2em;
@@ -373,19 +374,19 @@ h2.noticiasindex {
     background-color: rgb(242, 232, 228);
     padding: 0 30px 50px;
 }
-
+/* título */
 .boletin h2 {
     padding: 50px 0 10px 0;
     text-align: center;
     font-size: 1.5em;
     font-weight: 600;
 }
-
+/* Párrafo con texto en tamaño pequeño */
 .boletin p {
     font-size: .7em;
     line-height: 1.2em;
 }
-
+/* campos de datos del formulario */
 input[type=text], input[type=email] {
     display: block;
     width: 100%;
@@ -400,12 +401,11 @@ input[type=checkbox] {
     font-size: 1.1em;
     margin: 20px 0
 }
-
+/* Botón de envío del formulario */
 button {
     display: block;
     font-size: 1.5em;
     height: 55px;
-    padding: 10px;
     margin-bottom: 15px;
     background-color: rgb(189, 55, 0);
     border: none;
@@ -434,7 +434,7 @@ main.mainvideos {
 }
 
 /*
-Se determina el ancho máximo de la imagen
+Cabecera de vídeos
  */
 .videos h1 {
     font-weight: 800;
@@ -446,7 +446,7 @@ figure.video {
     background-color: white;
     margin-bottom: 25px;
 }
-
+/* diseño de los videos - contenedor */
 .video-fluid {
     position: relative;
     padding: 0;
@@ -456,7 +456,7 @@ figure.video {
     margin-bottom: 10px;
     background-color: white;
 }
-
+/* diseño de los videos */
 .video-fluid-item {
     position: absolute;
     top: 0;
@@ -471,7 +471,7 @@ figure.video {
     content: "";
     padding-top: 56.25%;
 }
-
+/* pie de los videos - texto */
 figcaption {
     font-size: 1em;
     text-align: center;
@@ -496,7 +496,7 @@ main.maincop26 {
 h2.resultados {
     padding: 30px 0 20px;
 }
-
+/* Lista ordenada */
 ol {
     padding-left: 20px;
 }
@@ -504,7 +504,7 @@ ol {
 ol li {
     margin-bottom: 20px;
 }
-
+/* bloque de Cita */
 blockquote {
     border-left: solid 5px rgb(189, 55, 0);
     background-color: rgb(255, 255, 255);
@@ -514,7 +514,11 @@ blockquote {
 }
 
 @media only screen and (min-width: 800px) {
-
+/* Modificaciones de estilos para pantallas a partir de 800px.
+Estos pueden ser para cualquier pantalla con un tamnaño superior a 800px
+o pueden ser modificados posteriormente enbn función del tamaño de la
+pantalla y del diseño que se quiera tener */
+    /* Se hacen modificaciones para la cabecera de la página: lema y logo*/
     .contlogo {
         margin: 0 auto;
         max-width: 1110px;
@@ -552,7 +556,7 @@ blockquote {
     }
 
     /*
-    Navegación
+    Menú de Navegación
      */
     nav ul {
         padding: 0 20px;
@@ -587,7 +591,7 @@ blockquote {
     .footmenu li:last-child:after {
         content: '';
     }
-/
+/* Se modifica el diseño de los videos para pantallas más grandes*/
     .videos {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -763,10 +767,24 @@ CSS para el lema
         line-height: 1.5em;
     }
 
+
+    /* Se modifica el diseño de los videos para pantallas más grandes*/
     .videos {
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
 
+    .videos h1 {
+        padding-bottom: 10px;
+        grid-column: 1/3;
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    .videos figure {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 1110px) {
@@ -856,9 +874,6 @@ CSS para el lema
         text-align: center;
     }
 
-
-
-
     /*
 CSS COP26
  */
@@ -932,7 +947,7 @@ CSS COP26
         margin-bottom: 25px;
         font-style: italic;
     }
-
+/* Modificación para lista ordenada */
     ol {
         margin-bottom: 30px;
     }
@@ -1054,7 +1069,21 @@ disposición de la imagen dentro del contenedor*/
         min-width: 420px;
     }
 /* Cambiar la anchura del contenedor de videos*/
+    /* Se modifica el diseño de los videos para pantallas más grandes*/
     .videos {
-        width: 1110px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .videos h1 {
+        padding-bottom: 10px;
+        grid-column: 1/3;
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    .videos figure {
+        margin-bottom: 30px;
     }
 }
