@@ -142,8 +142,8 @@ CSS para el logo
     font-size: 3.5em;
 }
 
-/* Para el menuú de navehación se usa
-
+/*
+Para el menú de navegación se usa
  */
 nav {
     background-color: white;
@@ -154,6 +154,7 @@ nav {
     z-index: 1000;
 }
 
+/* diseño de la lista del menú */
 nav ul {
     width: 100%;
     margin: 0px auto 0;
@@ -163,22 +164,25 @@ nav ul {
     font-weight: 800;
 }
 
+/* alineación del texto en los elementos de la lista del menú */
 nav ul li {
     text-align: center;
 }
 
+/* Color del enlace en estado normal */
 nav ul li a {
     color: rgb(0, 0, 0);
 }
 
+/* Se dtermina el color que tiene el enlace cuando se pasa el cursor por encima*/
 nav ul li a:hover {
     color: rgba(0, 0, 0, 0.5);
 }
 
+/* Se dtermina el color que tiene el enlace cuando corresponde a la página actual*/
 nav ul li a.actual {
     color: rgb(189, 55, 0);
 }
-
 
 /*
  CSS Pie de página
@@ -187,7 +191,6 @@ footer {
     width: 100%;
     display: block;
     padding: 5px 20px 20px 20px;
-
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-weight: lighter;
@@ -196,6 +199,19 @@ footer {
 }
 
 
+footer div {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+/* Texto del párrafo con información del autor */
+footer div p {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* Menú de navegación*/
 footer nav {
     padding: 0;
     display: inline-block;
@@ -205,21 +221,7 @@ footer nav {
     background-color: rgb(0, 0, 0);
 }
 
-footer div {
-    display: inline-block;
-    margin: 0 auto;
-    width: 100%;
-
-
-    background-color: rgb(0, 0, 0);
-
-}
-
-footer div p {
-    font-size: 1em;
-    line-height: 1.4em;
-}
-
+/* menú de navegación - Lista desordenada */
 footer nav ul {
     margin: 0;
     padding-top: 55px;
@@ -228,21 +230,22 @@ footer nav ul {
     font-size: 1em;
     text-transform: none;
 }
-
+/* elementos de la lista. menú de navegación */
 footer nav ul li {
     display: block;
 }
 
+/* Los enlaces del menú dentro de la lista desordenada */
 footer ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
+/* Comportamiento del enlace al pasar el cursor por encima */
 footer ul li a:hover {
     color: rgb(189, 55, 0);
 }
 
-
+/* enlaces a redes sociales */
 footer nav ul.redes {
     padding: 40px 0 20px;
     list-style: none;
@@ -291,7 +294,7 @@ También su comportamiento en caso de poner el puntero encima del enlace
 Se añade la separación que tiene que haber entre la página y el borde de la pantalla del dispositivo móvil
  */
 main.sintomas {
-    padding: 020px;
+    padding: 20px;
 }
 
 /* index
@@ -300,7 +303,7 @@ main.sintomas {
 main.index {
     background-color: rgb(244, 244, 244);
 }
-
+/* cabacera del index. Texto sobre imagen */
 h1.principal {
     margin-top: 0;
     display: inline-block;
@@ -315,19 +318,19 @@ h1.principal {
     line-height: 1.5em;
     text-align: left;
 }
-
+/* cabeceras h2 para la página principal */
 .titular h2 {
     text-align: center;
     font-weight: 800;
     font-size: 1.5rem;
     padding: 30px 0 15px;
 }
-
+/* tamaño de fuente del párrafo */
 .titular p {
 
     font-size: 1.3rem;
 }
-
+/* 
 section.titular {
 
     margin: 0 20px;
@@ -360,16 +363,12 @@ h2.noticiasindex {
     font-weight: 600;
     font-size: 1.3rem;
     text-transform: none;
-
-
 }
 
 .noticias h3 a {
     color: rgb(189, 55, 0);
-
-
 }
-
+/* Diseño suscripción al boletín de noticias */
 .boletin {
     background-color: rgb(242, 232, 228);
     padding: 0 30px 50px;
@@ -379,7 +378,7 @@ h2.noticiasindex {
     padding: 50px 0 10px 0;
     text-align: center;
     font-size: 1.5em;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .boletin p {
@@ -404,13 +403,10 @@ input[type=checkbox] {
 
 button {
     display: block;
-
     font-size: 1.5em;
     height: 55px;
     padding: 10px;
     margin-bottom: 15px;
-
-
     background-color: rgb(189, 55, 0);
     border: none;
     color: rgb(255, 255, 255);
@@ -421,12 +417,12 @@ button {
 /* Síntomas
 Se pone el ancho de la sección, la separación entre el borde y el contenido, las esquinas redondeadas el color del fondo y la separación con el elemento inmediatamente inferior
 */
-section.sintomas {
-    width: 100%;
+.sintomas section {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    margin-bottom: 15px;
+    grid-column: 2 / 4;
+    margin-bottom: 50px;
 }
 
 main.mainvideos {
@@ -441,11 +437,9 @@ main.mainvideos {
 Se determina el ancho máximo de la imagen
  */
 .videos h1 {
-
     font-weight: 800;
     font-size: 1.5rem;
     text-align: center;
-
 }
 
 figure.video {
@@ -455,15 +449,12 @@ figure.video {
 
 .video-fluid {
     position: relative;
-
     padding: 0;
-
     max-width: 100%;
     padding: 0;
     overflow: hidden;
     margin-bottom: 10px;
     background-color: white;
-
 }
 
 .video-fluid-item {
@@ -524,6 +515,18 @@ blockquote {
 
 @media only screen and (min-width: 800px) {
 
+    .contlogo {
+        margin: 0 auto;
+        max-width: 1110px;
+    }
+
+    .c15 {
+        display: block;
+        line-height: 1em;
+        font-weight: 800;
+        text-align: left;
+        font-size: 3.5em;
+    }
 
     /*
     Cabecera, lema, logo y Navegación superior
@@ -536,7 +539,7 @@ blockquote {
     CSS para el lema
      */
     .noplanb {
-
+        text-align: left;
         padding: 5px 0 5px;
         font-size: 1em;
     }
@@ -551,18 +554,15 @@ blockquote {
     /*
     Navegación
      */
-
     nav ul {
         padding: 0 20px;
         width: 100%;
-
     }
 
     nav ul li {
         display: inline;
         margin-right: 20px;
     }
-
 
     footer nav, footer div {
         display: inline-block;
@@ -578,21 +578,64 @@ blockquote {
         display: inline;
         margin-right: 7px;
     }
-
+/* Se añaden los puntos medios entre los elementos del menú */
     .footmenu li:after {
         margin-left: 5px;
         content: ' \2022';
     }
-
+    /* Se elimina el último punto medio del menú */
     .footmenu li:last-child:after {
         content: '';
     }
+/
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
 
+    .videos h1 {
+        padding-bottom: 10px;
+        grid-column: 1/3;
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    .videos figure {
+        margin-bottom: 30px;
+    }
+    /* Diseño suscripción al boletín de noticias
+    Se cambia el ancho del formulario*/
+    .boletin form {
+        width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1110px) {
 
     /*
+CSS para el lema
+ */
+    .noplanb {
+        padding: 20px 0 10px 20px;
+    }
+
+    .c15 {
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    nav ul {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    /*
     Index
      */
     h1.principal {
@@ -610,19 +653,146 @@ blockquote {
         text-align: left;
     }
 
+    h1.principal span {
+        display: block;
+        margin: 0 auto;
+        max-width: 1110px;
+    }
+
+    section.titular {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 30px;
+    }
+
+    .notindex {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    section.noticias {
+        margin: 0 auto;
+    }
+
+    .noticias figure {
+        max-width: 100%;
+    }
+
+    .noticias img {
+        max-width: 100%;
+    }
+
+    .noticias figcaption {
+        text-align: left;
+    }
+
+    h2.noticiasindex {
+        margin: 75px 0 10px;
+        font-weight: 800;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .maincop26 {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 50px;
+    }
+
+    .maincop26 h1 {
+        grid-column: 1/3;
+        font-size: 2.5em;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+
+    .maincop26 h2 {
+        padding: 0 0 20px;
+        font-size: 1.5em;
+    }
+
+    .sintomas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .sintomas h1 {
+        margin: 30px;
+        grid-column: 1/4;
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    .sintomas section {
+        padding: 20px;
+        background-color: white;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        border-radius: 10px;
+
+        margin-bottom: 50px;
+    }
+
+    .sintomas section:nth-child(odd) {
+        grid-column: 2;
+    }
+
+    .sintomas section:nth-child(even) {
+        grid-column: 1;
+    }
+
+    .sintomas section article h2 {
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+
+    .sintomas section article {
+        grid-column: 2;
+        width: 100%;
+    }
+
+    .sintomas section article p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .videos {
+        width: 100%;
+    }
 
 }
 
 @media screen and (min-width: 1110px) {
 
+    .noplanb {
+        padding: 20px 0 10px;
+    }
+
+    .c15 {
+        padding-bottom: 10px;
+    }
+
+    main.sintomas {
+        margin: 0 auto;
+        width: 1110px;
+        padding: 0px;
+    }
 
     /*
     Navegación
      */
     nav ul {
-        padding: 0 20px;
+        padding: 0 20px 0 0;
+        margin: 0 auto;
         width: 1110px;
-
+        font-size: 1.2em;
     }
 
     /*
@@ -643,4 +813,248 @@ blockquote {
         text-align: left;
     }
 
+    h1.principal span {
+        display: block;
+        margin: 0 auto;
+        width: 1110px;
+    }
+
+    section.titular {
+        width: 1110px;
+        margin: 0 auto;
+        padding: 0 0 30px;
+    }
+
+    .notindex {
+        width: 1110px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    section.noticias {
+        margin: 0 auto;
+    }
+
+    .noticias figure {
+        max-width: 100%;
+    }
+
+    .noticias img {
+        max-width: 100%;
+    }
+
+    .noticias figcaption {
+        text-align: left;
+    }
+
+    h2.noticiasindex {
+        margin: 75px 0 10px;
+        font-weight: 800;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+
+
+    /*
+CSS COP26
+ */
+    h1.principal span {
+        display: block;
+        margin: 0 auto;
+        max-width: 1110px;
+        font-size: 2em;
+        line-height: 1.5em;
+        padding: 20px 0 20px;
+    }
+
+    .index h2 {
+        display: block;
+        margin: 0 auto;
+        max-width: 1110px;
+        font-size: 2em;
+        line-height: 1.5em;
+        padding: 20px 0 20px;
+    }
+
+    .maincop26 {
+        width: 1110px;
+        margin: 35px auto 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 50px;
+    }
+
+    .maincop26 h1 {
+        grid-column: 1/3;
+        font-size: 2.5em;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+
+    .maincop26 h2 {
+        padding: 0 0 20px;
+        font-size: 1.5em;
+    }
+
+    aside h3 {
+        margin-top: 13px;
+
+    }
+
+    aside p {
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        margin-bottom: 18px;
+    }
+
+    section p {
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        hyphens: auto;
+    }
+
+    aside figure img {
+        width: 300px;
+    }
+
+    blockquote {
+        border-left: solid 5px rgb(189, 55, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+
+    ol {
+        margin-bottom: 30px;
+    }
+
+    ol li {
+        font-size: 1.1em;
+        margin-left: 30px;
+        margin-bottom: 13px;
+    }
+
+    cite {
+        font-weight: bold;
+    }
+
+
+/* Organización de los cuadros de los síntomas.
+Se hace de tal manera que concuerde con el mockup de pantalla grande
+A destacar que los elementos pares e impares están posicionados a izquierda y derecha respectivamente,
+ocupando dos tercios de la lines
+*/
+    .sintomas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sintomas h1 {
+        margin: 30px;
+        grid-column: 1/4;
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+
+    .sintomas section {
+        padding: 20px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        border-radius: 10px;
+        grid-column: 2 / 4;
+        margin-bottom: 50px;
+    }
+
+    .sintomas section:nth-child(odd) {
+        grid-column: 2 / 4;
+    }
+
+    .sintomas section:nth-child(even) {
+        grid-column: 1 / 3;
+    }
+
+    /* Diseño de los distintos elementos dentro de cada una de las secciones */
+    .sintomas section article h2 {
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+
+    .sintomas section article {
+        grid-column: 2;
+        width: 100%;
+    }
+
+    .sintomas section article p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .sintomas section figcaption {
+        grid-column: 1;
+    }
+/* Diseño de los enlaces dentro de la sección */
+    section a {
+        text-decoration: none;
+        border-bottom: dotted 1px;
+        color: rgb(189, 55, 0);
+    }
+
+    section a:hover {
+        color: rgb(0, 0, 0);
+    }
+
+/* Las imágenes para la página de síntomas
+Se ha intentado ajustar al máximo tanto las dimensiones como la
+disposición de la imagen dentro del contenedor*/
+
+    figure {
+        width: 335px;
+        overflow: hidden;
+    }
+
+    .fig1 img {
+        position: relative;
+        left: -10px;
+        min-width: 355px;
+    }
+
+    .fig2 img {
+        position: relative;
+        left: -30px;
+        min-width: 395px;
+    }
+
+    .fig3 img {
+        position: relative;
+        left: -20px;
+        min-width: 355px;
+    }
+
+    .fig4 img {
+        position: relative;
+        left: -30px;
+        min-width: 365px;
+    }
+
+    .fig5 img {
+        position: relative;
+        left: -40px;
+        min-width: 420px;
+    }
+/* Cambiar la anchura del contenedor de videos*/
+    .videos {
+        width: 1110px;
+    }
 }
