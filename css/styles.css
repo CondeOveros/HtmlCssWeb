@@ -277,14 +277,14 @@ También su comportamiento en caso de poner el puntero encima del enlace
 /*
 Se añade la separación que tiene que haber entre la página y el borde de la pantalla del dispositivo móvil
  */
-main{
-    padding:20px;
+main.sintomas{
+padding:020px;
 }
 /* index
 
  */
 main.index{
-    background-color: white;
+    background-color: rgb(244,244,244);
 }
 h1.principal{
     margin-top: 0;
@@ -299,16 +299,23 @@ h1.principal{
     text-align: left;
 }
 .titular h2{
+    text-align: center;
     font-weight: 800;
     font-size: 1.5rem;
-    padding: 20px 0 15px;
+    padding: 30px 0 15px;
 }
 
 .titular p{
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+section.titular {
+
+    margin: 0 20px;
+    padding: 0 0 30px;
 }
 section.noticias {
+    margin: 0 20px;
 padding: 0 0 30px;
 }
 .noticias img{
@@ -318,7 +325,7 @@ padding: 0 0 30px;
     text-align: left;
 }
 h2.noticiasindex {
-    margin: 110px 0 10px;
+    margin:75px 0 10px;
     font-weight: 800;
     font-size: 1.5rem;
     text-align: center;
@@ -328,8 +335,6 @@ h2.noticiasindex {
     line-height: 1.2em;
     font-weight: 600;
     font-size: 1.3rem;
-
-    color:rgb(189, 55, 0);
     text-transform: none;
 
 
@@ -337,10 +342,51 @@ h2.noticiasindex {
     color:rgb(189, 55, 0);
 
 
-
 }
 
+ .boletin{
+     background-color: rgb(242, 232, 228);
+     padding: 0 30px 50px;
+ }
+.boletin h2{
+    padding: 50px 0 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.boletin p{
+    font-size: .7em;
+    line-height: 1.2em;
+}
+input[type=text], input[type=email]{
+    display:block;
+    width:100%;
+    font-size: 1.1em;
+    height: 55px;
+    padding:10px;
+    margin-bottom: 15px;
+}
+input[type=checkbox]{
+    display:inline-block;
+    font-size: 1.1em;
+margin:20px 0
+}
+button{
+    display:block;
 
+    font-size: 1.5em;
+    height: 55px;
+    padding:10px;
+    margin-bottom: 15px;
+
+
+
+    background-color: rgb(189,55,0);
+    border:none;
+    color:rgb(255,255,255);
+    text-transform: uppercase;
+    padding: 20px 30px;
+}
 
 /* Síntomas
 Se pone el ancho de la sección, la separación entre el borde y el contenido, las esquinas redondeadas el color del fondo y la separación con el elemento inmediatamente inferior
@@ -352,12 +398,10 @@ section.sintomas {
     border-radius: 10px;
     margin-bottom: 15px;
 }
-.videos h1 {
-    margin: 30px 0 10px;
-    font-weight: 800;
-    font-size: 1.5rem;
-    text-align: center;
+main.mainvideos{
+    padding: 0 20px;
 }
+
 .sintomas figure img {
     max-width:100%;
 }
@@ -365,10 +409,11 @@ section.sintomas {
 Se determina el ancho máximo de la imagen
  */
 .videos h1 {
-    margin: 30px 0 10px;
+
     font-weight: 800;
     font-size: 1.5rem;
     text-align: center;
+
 }
 
 figure.video{
@@ -409,6 +454,12 @@ cite {
 /*
 COP 26
  */
+main.maincop26{
+    padding:0 20px;
+}
+.maincop26 h2{
+    padding:20px 0 20px;
+}
 h2.resultados{
     padding: 30px 0 20px;
 }
