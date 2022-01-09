@@ -283,6 +283,9 @@ main{
 /* index
 
  */
+main.index{
+    background-color: white;
+}
 h1.principal{
     margin-top: 0;
     background-image: url("../images/bg-hero-home.jpg");
@@ -305,7 +308,37 @@ h1.principal{
 
     font-size: 1.2rem;
 }
+section.noticias {
+padding: 0 0 30px;
+}
+.noticias img{
+    max-width: 100%;
+}
+.noticias figcaption{
+    text-align: left;
+}
+h2.noticiasindex {
+    margin: 110px 0 10px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.noticias h3 {
+    padding: 10px 0 10px;
+    line-height: 1.2em;
+    font-weight: 600;
+    font-size: 1.3rem;
 
+    color:rgb(189, 55, 0);
+    text-transform: none;
+
+
+}.noticias h3 a {
+    color:rgb(189, 55, 0);
+
+
+
+}
 
 
 
